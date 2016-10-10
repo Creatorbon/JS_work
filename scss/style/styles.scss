@@ -1,0 +1,32 @@
+$width: 50px;
+$height: 70px;
+$bgc: aqua;
+
+@mixin button-style($w, $h, $radius, $ml){
+background: #780206; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #780206 , #061161); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #780206 , #061161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width: $w;
+height: $h;
+border-radius: $radius;
+margin-left: $ml;
+}
+
+@mixin text($s, $c, $fs) {
+	font-size: $fs;
+	color: $c;
+	text-decoration: $s;
+}
+.buttom-color {
+	@include button-style(100px, 50px, 6px, 0);
+
+	span {
+		@include text(underline, red, 16px)
+	}
+}
+
+.block {
+	width: $width;
+	height: $height;
+	background-color: $bgc;
+}

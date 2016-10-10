@@ -1,0 +1,57 @@
+/* html,
+body {
+	min-width: 320px;
+	max-width: 1920px;
+	overflow-x: hidden;
+}
+.block	{
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	transition: width 0.5s 1s;
+}
+.block:hover {
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	border-radius: 20px;
+	border: 2px solid green;
+}
+ */
+ @import 'https://fonts.googleapis.com/css?family=Baloo+Bhai';
+body {
+	font-family: 'Baloo Bhai'
+}
+ @font-face {
+ 	src: ;
+ 	font-family: 'font-name';
+ }
+ @keyframes animation1 {
+ 	25% {background-color: aqua;}
+ 	50% {background-color: red;}
+ 	75% {background-color: yellow;}
+ 	100% {background-color: white;}
+ }
+.block {
+	text-align: center;
+}
+.button	{
+	background: white;
+ 	color: green; 
+ 	border: 2px solid green;
+	padding: 5px;
+	transition: all 0.5s ease;
+	border-radius: 6px;
+	text-decoration: underline;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: animation1 4s;
+}
+
+ .button:hover {
+ 	background: green;
+ 	color: white;
+ 	transform: scale(2);
+ }
